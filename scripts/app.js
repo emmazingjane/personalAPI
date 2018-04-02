@@ -19,19 +19,19 @@ $(document).ready(function(){
   });
 
 
-  $.ajax({
-    method: 'GET',
-    url: '/api/books',
-    success: handleSuccess,
-    error: handleError
-  });
+  // $.ajax({
+  //   method: 'GET',
+  //   url: '/api/books',
+  //   success: showSuccess,
+  //   error: showError
+  // });
 
 
-function getBookHtml(book) {
+function getPlacesHtml(places) {
   return `<hr>
           <p>
           	<b>${places.city}</b>
-            <b>${book.title}</b>
+      
             <br>
           `;
 }
